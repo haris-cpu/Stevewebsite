@@ -1,0 +1,164 @@
+/* Testimonials.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.testimonials-section {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.testimonials-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #0a1a2f;
+}
+
+.highlight-orange {
+  color: #f59e0b;
+}
+
+.testimonial-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 35px 30px;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quote-icon {
+  font-size: 3.5rem;
+  color: #f59e0b;
+  line-height: 1;
+  font-family: Georgia, serif;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: left;
+}
+
+.quote-icon img {
+  width: 32.63px; /* adjust size */
+  height: auto;
+}
+
+.testimonial-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+}
+
+.logos-container {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-placeholder {
+  font-size: 2.5rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.logo-placeholder:hover {
+  opacity: 1;
+}
+.logo-img {
+  width: 39.61px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    width: 55px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-card {
+    padding: 30px 25px;
+  }
+
+  .quote-icon {
+    font-size: 3rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .logos-container {
+    gap: 30px;
+  }
+
+  .logo-placeholder {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-section {
+    padding: 40px 0;
+  }
+
+  .testimonials-title {
+    font-size: 1.75rem;
+  }
+
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  .quote-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+
+  .logos-container {
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .logo-placeholder {
+    font-size: 1.8rem;
+  }
+}

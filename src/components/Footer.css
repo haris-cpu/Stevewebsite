@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.footer-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+.orange-dot {
+  color: orange;
+}
+.cta-container {
+  background: #2d2d2d;
+  padding: 60px 0;
+  overflow-x: hidden;
+}
+
+.cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.highlight-orange {
+  color: #f59e0b;
+}
+
+.cta-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.cta-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-bottom {
+  background: #ffffff;
+  padding: 15px 0;
+  border-top: 1px solid #e5e7eb;
+  overflow-x: hidden;
+}
+
+.footer-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #0077b5;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #005885;
+  transform: translateY(-2px);
+}
+
+/* Desktop/Laptop specific */
+@media (min-width: 1200px) {
+  .cta-button {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cta-button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    padding: 40px 0;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .cta-subtitle {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .cta-description {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    padding: 25px 0;
+  }
+
+  .footer-logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .cta-description {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+
+  .footer-logo {
+    font-size: 1.2rem;
+  }
+}
