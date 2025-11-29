@@ -39,7 +39,14 @@ const Card = () => {
                   alt={card.title}
                   className="card-icon-img"
                 />
-                <h3 className="card-title">{card.title}</h3>
+                <h3
+                  className={`card-title ${
+                    index === 1 ? 'second-card-title' : ''
+                  }`}
+                >
+                  {card.title}
+                </h3>
+
                 <p className="card-description">{card.description}</p>
               </div>
             </div>

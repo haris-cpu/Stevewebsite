@@ -4,10 +4,10 @@ import './About.css';
 
 function CEO() {
   const logos = [
-    { name: 'TSX', image: '/task.png' },
-    { name: 'KPMG', image: '/task2.png' },
-    { name: 'Metro', image: '/task3.png' },
-    { name: 'Stradigia', image: '/task4.png' },
+    { name: 'TSX', image: '/n1.png' },
+    { name: 'KPMG', image: '/n2.png' },
+    { name: 'Metro', image: '/n4.png' },
+    { name: 'Stradigia', image: '/n3.png' },
     { name: 'Salesforce', image: '/task5.png' },
     { name: 'YUM', image: '/task7.png' },
   ];

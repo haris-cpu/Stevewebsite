@@ -71,7 +71,7 @@ const Footer = () => {
               <img
                 src="/footer logo.png"
                 alt="Reignite Logo"
-                className="nav-logo m-0 mt-3"
+                className="nav-logo m-0 mt-1"
                 style={{
                   width: '158px',
                   height: 'auto',

@@ -93,7 +93,7 @@ const Strategy = () => {
           </button>
 
           <button
-            className="btn px-4 py-2"
+            className="btn px-4 py-2 primary-cta"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
             style={{

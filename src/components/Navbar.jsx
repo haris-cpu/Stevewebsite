@@ -5,6 +5,14 @@ export default function Reignite() {
   const [isHover, setIsHover] = useState(false);
   return (
     <div className="reignite-section d-flex  justify-content-center text-white">
+      <a href="#target-section" className="decorative-arrow-link">
+        <img
+          src="/HeroS.png"
+          alt="Decorative Arrow"
+          className="decorative-arrow"
+        />
+      </a>
+
       <div className="overlay"></div>
       <div className="container position-relative text-center">
         <nav className="d-flex justify-content-between align-items-center py-3">

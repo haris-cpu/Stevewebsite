@@ -240,45 +240,29 @@
   .bottom-right-label {
     bottom: -44px; /* move a bit lower to avoid collision when scaled */
   }
-}
-
-/* XS + SM (up to 576px) */
-@media (max-width: 576px) {
-  .col-md-6:last-child {
-    margin-top: 60px;
+  .triangle-container {
+    max-width: 380px !important; /* slightly larger than current */
+    height: 400px !important; /* increase height a bit */
+    transform: scale(0.9); /* enlarge but keep relative layout */
+    transform-origin: center top; /* top label unaffected */
+    margin-top: 20px; /* adjust spacing from left text */
   }
 
-  .triangle-container {
-    height: 300px;
-    max-width: 300px;
-    margin-top: 30px;
-    /* slightly smaller scale on xsmall to maintain visual parity */
-    transform: scale(0.72);
-    transform-origin: center top;
+  .triangle-svg {
+    width: 100% !important;
+    height: 100% !important;
   }
 
   .top-label {
-    top: -49px;
+    top: -50px !important; /* ensure top label stays above triangle */
   }
 
   .bottom-left-label,
   .bottom-right-label {
-    bottom: -60px;
+    bottom: -48px !important; /* maintain bottom labels position */
   }
 
   .momentum-box {
-    margin-top: 12px !important;
-    padding: 12px 16px;
-    text-align: center;
-  }
-
-  .momentum-title {
-    font-size: 12px;
-    padding: 6px 12px;
-    display: inline-block;
-  }
-
-  .label-subtitle {
-    font-size: 0.7rem;
+    transform: translate(-50%, 12%) !important; /* adjust center box slightly */
   }
 }
