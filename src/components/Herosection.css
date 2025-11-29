@@ -53,6 +53,8 @@
   max-width: 416px;
   height: 420px;
   margin: 0 auto;
+  transform-origin: center top;
+  transition: transform 0.18s ease;
 }
 
 .triangle-svg {
@@ -76,7 +78,7 @@
 .label-title {
   font-weight: 700;
   font-size: 0.9rem;
-  color: #f59e0b;
+  color: #da7a32;
   letter-spacing: 1px;
   margin-bottom: 3px;
 }
@@ -182,6 +184,9 @@
   .triangle-container {
     height: 350px;
     max-width: 350px;
+    /* scale slightly so the triangle and labels keep same relative layout without colliding */
+    transform: scale(0.82);
+    transform-origin: center top;
   }
 
   .momentum-box {
@@ -228,12 +233,12 @@
   }
 
   .top-label {
-    top: -30px; /* Reduce negative space on mobile */
+    top: -32px; /* Slightly reduced so label stays visually similar */
   }
 
   .bottom-left-label,
   .bottom-right-label {
-    bottom: -35px; /* Reduce negative space on mobile */
+    bottom: -44px; /* move a bit lower to avoid collision when scaled */
   }
 }
 
@@ -247,15 +252,18 @@
     height: 300px;
     max-width: 300px;
     margin-top: 30px;
+    /* slightly smaller scale on xsmall to maintain visual parity */
+    transform: scale(0.72);
+    transform-origin: center top;
   }
 
   .top-label {
-    top: -25px;
+    top: -49px;
   }
 
   .bottom-left-label,
   .bottom-right-label {
-    bottom: -30px;
+    bottom: -60px;
   }
 
   .momentum-box {

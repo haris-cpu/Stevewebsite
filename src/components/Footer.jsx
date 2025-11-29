@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './Footer.css';
+
 const Footer = () => {
   const [isHover, setIsHover] = useState(false);
   return (
@@ -26,24 +27,36 @@ const Footer = () => {
             </div>
             <div className="col-md-4 col-lg-4 text-center text-md-end">
               <button
-                className="btn mt-4 px-4 py-2"
+                className="btn px-4 py-2 primary-cta"
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
                 style={{
                   borderRadius: '3px',
                   maxWidth: '402px',
-                  width: '100%',
                   minHeight: '54px',
                   opacity: '1',
-                  color: isHover ? '#000' : '#ffffff', // text change on hover
-                  fontSize: '16px',
+                  color: isHover ? '#000' : '#ffffff',
+                  fontSize: '14px',
                   fontFamily: 'Montserrat, sans-serif',
-                  backgroundColor: isHover ? '#ffffff' : '#DA7A32', // 🎉 hover bg white
+                  backgroundColor: isHover ? '#ffffff' : '#DA7A32',
                   fontWeight: '600',
-                  border: '1px solid #DA7A32',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  justifyContent: 'center',
                 }}
               >
-                Take the 3-Minute Momentum Score™ →
+                Take the 3-Minute Momentum Score™
+                <img
+                  src="/errow1.png"
+                  alt="arrow"
+                  style={{
+                    width: '18.53px',
+                    height: '10px',
+                    objectFit: 'contain',
+                    filter: isHover ? 'brightness(0)' : 'brightness(100)',
+                  }}
+                />
               </button>
             </div>
           </div>
@@ -53,14 +66,20 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="footer-bottom">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <h2 className="logo m-0">
-                RE<span className="orange-dot">i</span>GN
-                <span className="orange-dot">i</span>TE
-              </h2>
+          <div className="row align-items-center footer-bottom-row">
+            <div className="col-6 text-start">
+              <img
+                src="/footer logo.png"
+                alt="Reignite Logo"
+                className="nav-logo m-0 mt-3"
+                style={{
+                  width: '158px',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
             </div>
-            <div className="col-12 col-md-6 text-center text-md-end">
+            <div className="col-6 text-end">
               <a href="#" className="social-icon" aria-label="LinkedIn">
                 <svg
                   width="24"

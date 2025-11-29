@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .reignite-section {
-  background-image: url('/maining.jpg'); /* image path */
-  background-size: cover; /* poora div fill kare */
-  background-position: center; /* image center mein */
-  background-repeat: no-repeat; /* repeat nahi hogi */
-  min-height: 100vh; /* min-height use karo instead of height */
+  background-image: url('/maining.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   width: 100%;
+  max-width: 1441px;
+  min-height: 700px;
+
+  margin: 0 auto;
   position: relative;
 }
 
@@ -50,6 +54,16 @@
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 34px;
+
+  max-width: 579px; /* tumhari given width */
+  min-height: 51px; /* tumhari given height */
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 0 auto; /* center karne ke liye */
 }
 
 .request-btn-mobile {
@@ -61,6 +75,12 @@
 .request-btn-mobile:hover {
   background-color: white;
   color: #000;
+}
+
+/* Duplicate/mobile request - hidden on large/desktop by default */
+.request-btn-duplicate,
+.mobile-request-row {
+  display: none !important;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +101,66 @@
     z-index: auto;
   }
 
+  /* Hide the top/nav request button on small devices and show the duplicate under CTA */
+  .request-btn-top {
+    display: none !important;
+  }
+
+  .request-btn-duplicate {
+    display: inline-flex !important;
+    width: 100% !important;
+    max-width: 402px !important;
+    min-height: 54px !important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px !important;
+  }
+
+  /* Make the primary CTA and duplicate same size on small devices */
+  .primary-cta {
+    width: 100% !important;
+    max-width: 402px !important;
+    min-height: 54px !important;
+    justify-content: center;
+  }
+
+  /* Stack CTAs in separate rows and make full-width on small devices */
+  .cta-row {
+    flex-direction: column !important;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .cta-row .primary-cta,
+  .cta-row .request-btn-duplicate {
+    width: 100% !important;
+    max-width: 100% !important; /* take full available width */
+    box-sizing: border-box;
+  }
+
+  /* Stronger enforcement in case Bootstrap classes conflict */
+  .cta-row.d-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .cta-row.d-flex > .btn {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    margin: 6px 0 !important;
+  }
+
+  .request-btn-duplicate {
+    display: flex !important;
+  }
+
+  /* Ensure the mobile request wrapper is shown only on small screens */
+  .mobile-request-row {
+    display: flex !important;
+  }
+
   .btn.btn-light {
     width: 100% !important;
   }
@@ -95,11 +175,11 @@
   }
 
   .main-heading {
-    font-size: 1.9rem;
+    font-size: 24px; /* small/xsmall: explicitly 24px */
   }
 
   .sub-text {
-    font-size: 1rem;
+    font-size: 16px; /* small/xsmall: explicitly 16px */
   }
 }
 
@@ -109,7 +189,7 @@
   }
 
   .main-heading {
-    font-size: 2.2rem;
+    font-size: 24px; /* x-small devices */
   }
 
   .request-btn-mobile {
@@ -129,7 +209,7 @@
   }
 
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 24px; /* small devices */
   }
 
   /* YEH PART REMOVE KAR DIYA - fixed position ki wajah se overlap ho raha tha */

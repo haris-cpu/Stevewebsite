@@ -25,7 +25,7 @@ const Herosection = () => {
               instantly respond to.
             </div>
 
-            <p className="mt-3 final-text">
+            <p className="mt-3 item-box">
               We help founders unlock that momentum – fast
             </p>
           </div>

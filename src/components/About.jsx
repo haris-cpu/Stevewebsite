@@ -15,9 +15,9 @@ function CEO() {
   return (
     <div className="ceo-section">
       <div className="ceo-container">
-        <div className="ceo-row">
+        <div className="ceo-row row">
           {/* Left Column - Image */}
-          <div className="ceo-col ceo-left">
+          <div className="ceo-col ceo-left col-md-6 col-sm-12">
             <div className="ceo-image-wrapper">
               <img
                 src="/CEO.png"
@@ -28,11 +28,20 @@ function CEO() {
           </div>
 
           {/* Right Column - Content */}
-          <div className="ceo-col ceo-right">
+          <div className="ceo-col ceo-right col-md-6 col-sm-12">
             <div className="ceo-content-wrapper">
               <h1 className="ceo-main-title">
                 About <span className="ceo-highlight">Steven Tshakatumba</span>
               </h1>
+
+              {/* Decorative image below the title */}
+              <div className="ceo-title-image-wrapper">
+                <img
+                  src="/eee.png"
+                  alt="decorative"
+                  className="ceo-title-image"
+                />
+              </div>
 
               <p className="ceo-description">
                 Steven helps purpose-driven founders reignite clarity, purpose,
@@ -59,7 +68,10 @@ function CEO() {
               {/* Why Section */}
               <div className="ceo-why-box">
                 <h2 className="ceo-why-title">
-                  Steven's <span className="ceo-highlight">WHY:</span>
+                  Steven's{' '}
+                  <span className="ceo-highlight" style={{ fontSize: '23px' }}>
+                    WHY:
+                  </span>
                 </h2>
                 <p className="ceo-why-text">
                   Steven believes that businesses can be used as a force for
@@ -68,19 +80,23 @@ function CEO() {
                 </p>
               </div>
 
-              {/* Logo Section */}
-              <div className="logos-container">
-                {logos.map((logo, index) => (
-                  <div className="logo-item" key={index}>
-                    <img
-                      src={logo.image}
-                      alt={logo.name}
-                      className="logo-img"
-                    />
-                  </div>
-                ))}
-              </div>
+              {/* Logo section is moved below into its own centered row */}
             </div>
+          </div>
+        </div>
+
+        {/* Logos placed in their own centered row */}
+        <div className="ceo-logos-row">
+          <div className="logos-container">
+            {logos.map((logo, index) => (
+              <div className="logo-item" key={index}>
+                <img
+                  src={logo.image}
+                  alt={logo.name}
+                  className={`logo-img logo-img--${index + 1}`}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

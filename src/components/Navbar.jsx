@@ -4,17 +4,23 @@ import { useState } from 'react';
 export default function Reignite() {
   const [isHover, setIsHover] = useState(false);
   return (
-    <div className="reignite-section d-flex align-items-center justify-content-center text-white">
+    <div className="reignite-section d-flex  justify-content-center text-white">
       <div className="overlay"></div>
       <div className="container position-relative text-center">
         <nav className="d-flex justify-content-between align-items-center py-3">
-          <h2 className="logo m-0">
-            RE<span className="orange-dot">i</span>GN
-            <span className="orange-dot">i</span>TE
-          </h2>
+          <img
+            src="/hero logo.png"
+            alt="Reignite Logo"
+            className="nav-logo m-0 mt-3"
+            style={{
+              width: '191.84px',
+              height: 'auto',
+              objectFit: 'contain',
+            }}
+          />
 
           <button
-            className="btn btn-light btn-sm px-3  request-btn-mobile col-12 col-md-4 col-lg-3"
+            className="btn btn-light btn-sm px-3 mt-3 request-btn-mobile request-btn-top col-12 col-md-4 col-lg-3"
             style={{
               borderRadius: '3px',
               maxWidth: '288px',
@@ -24,9 +30,18 @@ export default function Reignite() {
               fontWeight: '500',
               fontSize: '16px',
               fontFamily: 'Montserrat, sans-serif',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px', // space between text and image
             }}
           >
-            Request to Work With Us →
+            Request to Work With Us
+            <img
+              src="/errow2.png" // image path
+              alt="arrow"
+              style={{ width: '15.53px', height: '10px', objectFit: 'contain' }}
+            />
           </button>
         </nav>
 
@@ -42,7 +57,7 @@ export default function Reignite() {
             </p>
             <div className="d-flex justify-content-center mt-4">
               <button
-                className="btn px-4 py-2"
+                className="btn px-4 py-2 primary-cta"
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
                 style={{
@@ -55,10 +70,57 @@ export default function Reignite() {
                   fontFamily: 'Montserrat, sans-serif',
                   backgroundColor: isHover ? '#ffffff' : '#DA7A32',
                   fontWeight: '600',
-                  border: '1px solid #DA7A32',
+
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  justifyContent: 'center',
                 }}
               >
-                Take the 3-Minute Momentum Score™ →
+                Take the 3-Minute Momentum Score™
+                <img
+                  src="/errow1.png"
+                  alt="arrow"
+                  style={{
+                    width: '18.53px',
+                    height: '10px',
+                    objectFit: 'contain',
+
+                    // ⭐ This makes the image BLACK on hover
+                    filter: isHover ? 'brightness(0)' : 'brightness(100)',
+                  }}
+                />
+              </button>
+            </div>
+
+            {/* Duplicate request button moved to its own row so it'll always appear below CTA on small devices */}
+            <div className="d-flex justify-content-center mt-3 mobile-request-row">
+              <button
+                className="btn btn-light request-btn-mobile request-btn-duplicate"
+                style={{
+                  borderRadius: '3px',
+                  maxWidth: '402px',
+                  width: '100%',
+                  minHeight: '54px',
+                  opacity: '1',
+                  fontWeight: '500',
+                  fontSize: '16px',
+                  fontFamily: 'Montserrat, sans-serif',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                }}
+              >
+                Request to Work With Us
+                <img
+                  src="/errow2.png"
+                  alt="arrow"
+                  style={{
+                    width: '15.53px',
+                    height: '10px',
+                    objectFit: 'contain',
+                  }}
+                />
               </button>
             </div>
           </div>

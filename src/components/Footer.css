@@ -90,24 +90,24 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   .cta-container {
     padding: 40px 0;
   }
 
   .cta-title {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .cta-subtitle {
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .cta-description {
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-bottom {
@@ -117,27 +117,31 @@
   .footer-logo {
     font-size: 1.3rem;
   }
-}
 
-@media (max-width: 576px) {
-  .cta-title {
-    font-size: 1.75rem;
+  /* Force row layout */
+  .footer-bottom .row {
+    flex-wrap: nowrap !important;
   }
 
-  .cta-subtitle {
-    font-size: 0.95rem;
+  .footer-bottom .col-12 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
   }
 
-  .cta-description {
-    font-size: 0.85rem;
+  /* Remove center alignment */
+  .footer-bottom .text-center {
+    text-align: left !important;
   }
 
-  .cta-button {
-    font-size: 14px;
-    padding: 14px 20px;
+  /* LinkedIn ko right side par rakho */
+  .footer-bottom .col-12:last-child,
+  .footer-bottom .text-md-end {
+    text-align: right !important;
   }
 
-  .footer-logo {
-    font-size: 1.2rem;
+  /* Remove bottom margin */
+  .footer-bottom .mb-3 {
+    margin-bottom: 0 !important;
   }
 }

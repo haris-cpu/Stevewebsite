@@ -19,7 +19,7 @@ const Main = () => {
               }}
             >
               <div className="reignite-card-overlay">
-                <h3 className="reignite-card-title">
+                <h3 className="reignite-card-title1">
                   WHY Discoveries delivered
                 </h3>
               </div>
@@ -34,7 +34,7 @@ const Main = () => {
               }}
             >
               <div className="reignite-card-overlay">
-                <h3 className="reignite-card-title">
+                <h3 className="reignite-card-title1">
                   Strategy workshops for founders
                 </h3>
               </div>
@@ -82,7 +82,26 @@ const Main = () => {
               }}
             >
               <div className="reignite-card-overlay">
-                <h3 className="reignite-card-title">AI strategy & investing</h3>
+                <h3
+                  className="ai-heading"
+                  style={{
+                    fontFamily: 'Montserrat, sans-serif',
+                    fontWeight: 600,
+                    fontSize: '26px',
+                    lineHeight: '33px',
+                    letterSpacing: 0,
+                    color: '#ffffff',
+                    margin: 0,
+                    verticalAlign: 'middle',
+                    width: '100%',
+                    maxWidth: '231px',
+                    height: 'auto',
+                    opacity: 1,
+                    position: 'relative',
+                  }}
+                >
+                  AI strategy & investing
+                </h3>
               </div>
             </div>
           </div>
