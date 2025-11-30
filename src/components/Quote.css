@@ -251,7 +251,9 @@
   }
 
   .testimonial-text {
-    font-size: 0.9rem;
+    font-size: 18px;
+    margin-top: 22px;
+    font-weight: 400;
   }
 
   .logos-container {
