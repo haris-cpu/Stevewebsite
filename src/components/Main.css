@@ -35,13 +35,13 @@
 
 .reignite-card {
   position: relative;
-  border-radius: 0; /* agar full image chahiye to rounded corners hatao */
+  border-radius: 0;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: none; /* agar shadow nahi chahiye */
-  margin: 0; /* parent grid ke gap ke alawa */
-  padding: 0; /* padding remove */
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
 }
 
 .reignite-card-large {
@@ -49,20 +49,18 @@
 }
 
 .reignite-card-small {
-  height: 240px;
+  height: 275px;
 }
 
 .reignite-card-image {
-  width: 100%; /* responsive width */
-  max-width: 586px; /* Figma width */
-  height: auto; /* maintain aspect ratio */
-  aspect-ratio: 585.72 / 318.33; /* Figma width/height ratio */
-  border-radius: 3.5px; /* rounded corners */
-  background-size: cover; /* poora card fill kare */
+  width: 100%;
+  height: 100%;
+  border-radius: 3.5px;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  opacity: 1; /* Figma opacity */
+  opacity: 1;
 }
 
 .reignite-card-overlay {
@@ -80,35 +78,36 @@
 }
 
 .reignite-card-title1 {
-  font-family: 'Montserrat', sans-serif; /* font-family */
-  font-weight: 600; /* SemiBold */
-  font-size: 26px; /* font size */
-  line-height: 33px; /* Figma line-height */
-  letter-spacing: 0; /* Figma letter spacing */
-  color: #ffffff; /* text color */
-  margin: 0; /* remove default margin */
-  vertical-align: middle; /* optional, harmless */
-  max-width: 337px; /* Figma width */
-  width: 100%; /* responsive width */
-  height: auto; /* auto height */
-  opacity: 1; /* Figma opacity */
-  position: relative; /* for layout */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+  vertical-align: middle;
+  max-width: 337px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  position: relative;
   margin-bottom: 18px;
 }
+
 .reignite-card-title {
-  font-family: 'Montserrat', sans-serif; /* font-family */
-  font-weight: 600; /* SemiBold */
-  font-size: 22px; /* font size */
-  line-height: 33px; /* Figma line-height */
-  letter-spacing: 0; /* Figma letter spacing */
-  color: #ffffff; /* text color */
-  margin: 0; /* remove default margin */
-  vertical-align: middle; /* optional, harmless */
-  max-width: 310px; /* Figma width */
-  width: 100%; /* responsive width */
-  height: auto; /* auto height */
-  opacity: 1; /* Figma opacity */
-  position: relative; /* for layout */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+  vertical-align: middle;
+  max-width: 310px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  position: relative;
 }
 
 @media (max-width: 968px) {
@@ -130,7 +129,7 @@
   }
 
   .reignite-card-small {
-    height: 200px;
+    height: 260px;
   }
 }
 
@@ -152,7 +151,7 @@
 
   .reignite-card-large,
   .reignite-card-small {
-    height: 220px;
+    height: 240px;
   }
 
   .reignite-card-overlay {
@@ -168,9 +167,11 @@
   .reignite-heading {
     font-size: 1.5rem;
   }
+
   .reignite-card-title1 {
     font-size: 18px;
   }
+
   .reignite-card-title {
     font-size: 16px;
   }

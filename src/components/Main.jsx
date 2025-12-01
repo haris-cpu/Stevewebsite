@@ -87,7 +87,7 @@ const Main = () => {
                   style={{
                     fontFamily: 'Montserrat, sans-serif',
                     fontWeight: 600,
-                    fontSize: '26px',
+                    fontSize: '22px',
                     lineHeight: '33px',
                     letterSpacing: 0,
                     color: '#ffffff',
@@ -98,6 +98,7 @@ const Main = () => {
                     height: 'auto',
                     opacity: 1,
                     position: 'relative',
+                    bottom: '20px',
                   }}
                 >
                   AI strategy & investing
