@@ -308,3 +308,8 @@
     text-align: center !important;
   }
 }
+@media (min-width: 1441px) {
+  .reignite-section {
+    max-width: 100% !important;
+  }
+}

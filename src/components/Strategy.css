@@ -416,3 +416,8 @@
     max-width: 100% !important;
   }
 }
+@media (min-width: 1441px) {
+  .strategy-container {
+    max-width: 100% !important;
+  }
+}

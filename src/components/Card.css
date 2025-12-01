@@ -197,3 +197,8 @@
     font-size: 14px;
   }
 }
+@media (min-width: 1441px) {
+  .advantage-section {
+    max-width: 100% !important;
+  }
+}

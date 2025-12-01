@@ -539,3 +539,8 @@
     font-size: 0.85rem;
   }
 }
+@media (min-width: 1441px) {
+  .ceo-section {
+    max-width: 100% !important;
+  }
+}
