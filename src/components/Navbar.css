@@ -224,10 +224,6 @@
     width: 100%;
   }
 
-  .main-heading {
-    font-size: 24px !important;
-  }
-
   .sub-text {
     font-size: 16px;
     line-height: 28px;
@@ -258,12 +254,6 @@
 @media (min-width: 577px) and (max-width: 768px) {
   .logo {
     font-size: 2.5rem;
-  }
-
-  .main-heading {
-    font-size: 24px !important;
-    position: relative;
-    top: 13px;
   }
 
   .request-btn-mobile {
@@ -320,5 +310,10 @@
 @media (min-width: 1441px) {
   .reignite-section {
     max-width: 100% !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 786px) {
+  .main-heading {
+    font-size: 24px !important;
   }
 }

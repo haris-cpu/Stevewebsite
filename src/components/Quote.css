@@ -111,7 +111,7 @@
 /* Responsive */
 @media (max-width: 786px) {
   .testimonials-title {
-    font-size: 2rem;
+    font-size: 24px;
   }
   .testimonial-card {
     padding: 30px 25px;
@@ -181,7 +181,7 @@
     padding: 40px 0;
   }
   .testimonials-title {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
   .testimonial-card {
     padding: 25px 20px;
