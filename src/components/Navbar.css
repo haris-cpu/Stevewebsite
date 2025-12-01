@@ -24,6 +24,14 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
+.arrow-move {
+  transition: transform 0.3s ease; /* Smooth animate */
+}
+
+.request-btn-mobile:hover .arrow-move,
+.request-btn-top:hover .arrow-move {
+  transform: translateX(6px); /* Thora right move */
+}
 
 .logo {
   font-weight: 700;

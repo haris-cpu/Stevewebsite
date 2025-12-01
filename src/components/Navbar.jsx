@@ -69,6 +69,7 @@ export default function Reignite() {
               <img
                 src="/errow2.png"
                 alt="arrow"
+                className="arrow-move"
                 style={{
                   width: '15.53px',
                   height: '10px',

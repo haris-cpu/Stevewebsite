@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .advantage-section {
-  background: #fafafa;
   padding: 60px 0;
 }
 
@@ -200,5 +199,9 @@
 @media (min-width: 1441px) {
   .advantage-section {
     max-width: 100% !important;
+  }
+  .card-title {
+    max-width: 280px;
+    white-space: normal;
   }
 }
