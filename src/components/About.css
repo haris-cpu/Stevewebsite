@@ -95,6 +95,7 @@
 
 .ceo-highlight {
   color: #ff6b35;
+  ont-size: 32px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -122,18 +123,6 @@
   margin-top: 0;
   margin-bottom: 20px;
   height: auto;
-}
-.ceo-main-title .ceo-highlight,
-.ceo-highlight {
-  color: #da7a32;
-
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 57px;
-  letter-spacing: 0;
-  vertical-align: middle;
 }
 
 /* Title image (eee.png) styling */
@@ -542,5 +531,34 @@
 @media (min-width: 1441px) {
   .ceo-section {
     max-width: 100% !important;
+  }
+}
+/* CEO logos scroll for small devices */
+@media (max-width: 768px) {
+  .ceo-logos-row {
+    overflow-x: hidden; /* parent container */
+  }
+
+  .logos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .logos-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .logo-item {
+    flex: 0 0 auto;
+  }
+
+  .logo-img {
+    max-height: 44px;
+    max-width: 120px;
+    object-fit: contain;
   }
 }

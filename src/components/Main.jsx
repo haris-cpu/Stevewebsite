@@ -98,7 +98,7 @@ const Main = () => {
                     height: 'auto',
                     opacity: 1,
                     position: 'relative',
-                    bottom: '20px',
+                    bottom: '1px',
                   }}
                 >
                   AI strategy & investing

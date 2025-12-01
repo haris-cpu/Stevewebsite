@@ -5,12 +5,17 @@
 .strategy-container {
   background-color: #0a1a2f;
   max-width: 1440px; /* max width applied */
-  height: 732px; /* fixed height */
+  height: 700px; /* fixed height */
   margin: 0 auto; /* center horizontally */
   padding: 60px 40px;
   color: #ffffff;
   width: 100%; /* responsive width */
   position: relative; /* allow top/left if needed */
+
+  display: flex; /* flexbox */
+  flex-direction: column; /* optional, if items vertical hain */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center (optional) */
 }
 
 .strategy-wrapper {

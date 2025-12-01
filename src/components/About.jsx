@@ -1,8 +1,30 @@
 // CEO.jsx
 import React from 'react';
 import './About.css';
+import { useRef, useEffect } from 'react';
 
 function CEO() {
+  const logosRef = useRef(null);
+
+  useEffect(() => {
+    const container = logosRef.current;
+    if (!container) return;
+
+    let scrollAmount = 0;
+
+    const scrollLogos = () => {
+      if (window.innerWidth <= 768) {
+        scrollAmount += 1; // speed
+        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
+          scrollAmount = 0;
+        }
+        container.scrollLeft = scrollAmount;
+      }
+      requestAnimationFrame(scrollLogos);
+    };
+
+    requestAnimationFrame(scrollLogos);
+  }, []);
   const logos = [
     { name: 'TSX', image: '/n1.png' },
     { name: 'KPMG', image: '/n2.png' },
@@ -31,7 +53,7 @@ function CEO() {
           <div className="ceo-col ceo-right col-md-6 col-sm-12">
             <div className="ceo-content-wrapper">
               <h1 className="ceo-main-title">
-                About <span className="ceo-highlight">Steven Tshakatumba</span>
+                About <span className="ceo-highlight"> Steven Tshakatumba</span>
               </h1>
 
               {/* Decorative image below the title */}
@@ -67,7 +89,7 @@ function CEO() {
 
               {/* Why Section */}
               <div className="ceo-why-box">
-                <h2 className="ceo-why-title">
+                <h2 className="ceo-why-title" style={{ fontSize: '23px' }}>
                   Steven's{' '}
                   <span className="ceo-highlight" style={{ fontSize: '23px' }}>
                     WHY:
@@ -87,7 +109,7 @@ function CEO() {
 
         {/* Logos placed in their own centered row */}
         <div className="ceo-logos-row">
-          <div className="logos-container">
+          <div className="logos-container" ref={logosRef}>
             {logos.map((logo, index) => (
               <div className="logo-item" key={index}>
                 <img

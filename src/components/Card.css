@@ -102,7 +102,7 @@
 
 @media (max-width: 768px) {
   .advantage-title {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 28px important;
     max-width: 197px;
 
@@ -124,7 +124,7 @@
     max-width: 269.98px;
     font-size: 16px !important;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 20px;
 
     min-height: 48px; /* approximate height for 3 lines */
     height: auto;
@@ -140,7 +140,7 @@
     min-height: 34px; /* approximate height for 2 lines */
     font-size: 16px !important;
     font-weight: 600 !important;
-    line-height: 18px; /* adjust line spacing to fit 2 lines */
+    line-height: 22px; /* adjust line spacing to fit 2 lines */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2; /* force max 2 lines */
@@ -172,9 +172,9 @@
   }
 
   .advantage-title {
-    font-size: 1.75rem;
+    font-size: 24px;
     line-height: 24px;
-    margin-left: 17px;
+    margin-left: 37px;
     white-space: nowrap !important; /* Never wrap */
   }
 
@@ -190,10 +190,12 @@
 
   .card-title {
     font-size: 16px;
+    line-height: 22px;
   }
 
   .card-description {
     font-size: 14px;
+    line-height: 26px;
   }
 }
 @media (min-width: 1441px) {

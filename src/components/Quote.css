@@ -1,4 +1,3 @@
-/* Testimonials.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -12,6 +11,7 @@
   font-weight: 700;
   font-size: 2.5rem;
   color: #0a1a2f;
+  text-align: center;
 }
 
 .highlight-orange {
@@ -20,215 +20,159 @@
 
 .testimonial-card {
   background: #f7f7f7;
-  border-radius: 3px; /* Figma border-radius */
+  border-radius: 3px;
   padding: 35px 30px;
-  width: 100%; /* responsive width */
-  max-width: 406px; /* Figma width */
-  min-height: 196px; /* height auto for responsive text/content */
-  opacity: 1; /* Figma opacity */
-  position: relative; /* allows positioning if needed */
+  width: 100%;
+  max-width: 406px;
+  min-height: 196px;
+  position: relative;
   transition: all 0.3s ease;
-  box-sizing: border-box; /* include padding in width */
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .quote-icon {
-  font-size: 3.5rem;
-  color: #f59e0b;
-  line-height: 1;
-  font-family: Georgia, serif;
-  margin-bottom: 15px;
   display: flex;
   justify-content: left;
+  margin-bottom: 15px;
 }
-
 .quote-icon img {
-  width: 32.63px; /* adjust size */
+  width: 32.63px;
   height: auto;
 }
 
 .testimonial-text {
-  font-family: 'Inter', sans-serif; /* Figma font */
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 20px; /* 16px */
+  font-size: 20px;
   font-style: italic;
   line-height: 30px;
   color: #5a5a5a;
   margin: 0;
-  letter-spacing: 0px;
+  max-width: 301px;
+}
 
-  width: 100%; /* responsive width */
-  max-width: 301px; /* Figma width */
-  height: auto; /* height auto for text content */
-  opacity: 1; /* Figma opacity */
-  position: relative; /* for layout if needed */
+/* Logos */
+.logos-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .logos-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
-  margin: 50px auto 0 auto; /* center horizontally on page */
-
-  width: 100%; /* full available width so logos center on the page */
-  max-width: none; /* allow full-width centering */
-  height: auto; /* auto height for content */
-  min-height: 50px;
-  opacity: 1;
-  position: relative;
-  padding: 0 20px; /* inner padding so logos don't touch edges on small screens */
+  flex-wrap: wrap;
+  margin: 50px auto 0;
 }
 
 .logo-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto; /* prevent logos from stretching */
+  flex: 0 0 auto;
 }
 
-.logo-placeholder {
-  font-size: 2.5rem;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-.logo-placeholder:hover {
-  opacity: 1;
-}
 .logo-img {
-  width: 52px; /* slightly larger default for readability */
+  width: 52px;
   height: 41px;
-  max-width: 100%;
   object-fit: contain;
   transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
-/* Per-logo exact sizes from design (desktop) */
+/* Per-logo sizes */
 .logo-img--1 {
-  /* task.png */
-  width: 39.613128662109375px;
-  height: 41.060611724853516px;
+  width: 39.6px;
+  height: 41px;
 }
 .logo-img--2 {
-  /* task2.png */
-  width: 60.96410369873047px;
-  height: 24.28403663635254px;
+  width: 60.9px;
+  height: 24.2px;
 }
 .logo-img--3 {
-  /* task3.png */
-  width: 47.1875px;
-  height: 47.1875px;
+  width: 47.1px;
+  height: 47.1px;
 }
 .logo-img--4 {
-  /* task4.png */
-  width: 126.92278289794922px;
-  height: 30.05436897277832px;
+  width: 126.9px;
+  height: 30px;
 }
 .logo-img--5 {
-  /* task5.png */
-  width: 59.6428337097168px;
-  height: 41.83900451660156px;
+  width: 59.6px;
+  height: 41.8px;
 }
 .logo-img--6 {
-  /* task7.png */
-  width: 45.278812408447266px;
-  height: 47.09770202636719px;
-  border-radius: 261.52px; /* large pill as provided */
+  width: 45.2px;
+  height: 47px;
+  border-radius: 261px;
 }
 
-@media (max-width: 768px) {
-  .logo-img {
-    width: 70px;
-  }
-}
-
-/* Responsive overrides for small / x-small - match requested max 786px breakpoint */
+/* Responsive */
 @media (max-width: 786px) {
-  .logo-img--1 {
-    width: 32px;
-    height: 33px;
-  }
-  .logo-img--2 {
-    width: 48px;
-    height: 20px;
-  }
-  .logo-img--3 {
-    width: 36px;
-    height: 36px;
-  }
-  .logo-img--4 {
-    width: 96px;
-    height: 22px;
-  }
-  .logo-img--5 {
-    width: 44px;
-    height: 31px;
-  }
-  .logo-img--6 {
-    width: 36px;
-    height: 37px;
-    border-radius: 9999px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-img--1 {
-    width: 28px;
-    height: 29px;
-  }
-  .logo-img--2 {
-    width: 40px;
-    height: 16px;
-  }
-  .logo-img--3 {
-    width: 32px;
-    height: 32px;
-  }
-  .logo-img--4 {
-    width: 80px;
-    height: 18px;
-  }
-  .logo-img--5 {
-    width: 36px;
-    height: 25px;
-  }
-  .logo-img--6 {
-    width: 30px;
-    height: 31px;
-    border-radius: 9999px;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo-img {
-    width: 55px;
-  }
-}
-
-@media (max-width: 768px) {
   .testimonials-title {
     font-size: 2rem;
   }
-
   .testimonial-card {
     padding: 30px 25px;
   }
-
-  .quote-icon {
-    font-size: 3rem;
-  }
-
   .testimonial-text {
     font-size: 0.95rem;
   }
 
-  .logos-container {
-    gap: 30px;
+  .testimonials-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+  .testimonials-track::-webkit-scrollbar {
+    display: none;
+  }
+  .testimonials-track .col-md-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    scroll-snap-align: start;
+  }
+  .testimonial-card {
+    min-width: 100%;
   }
 
-  .logo-placeholder {
-    font-size: 2rem;
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d0d0d0;
+    border: none;
+    cursor: pointer;
+  }
+  .carousel-dots .dot.active {
+    background: #da7a32;
+    transform: scale(1.05);
+  }
+
+  .logos-container {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 30px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overflow-x: auto;
+  }
+  .logos-container::-webkit-scrollbar {
+    display: none;
+  }
+  .logo-item {
+    flex-shrink: 0;
   }
 }
 
@@ -236,260 +180,36 @@
   .testimonials-section {
     padding: 40px 0;
   }
-
   .testimonials-title {
     font-size: 1.75rem;
   }
-
   .testimonial-card {
     padding: 25px 20px;
   }
-
-  .quote-icon {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-
   .testimonial-text {
     font-size: 18px;
-    margin-top: 22px;
-    font-weight: 400;
   }
-
   .logos-container {
     gap: 25px;
     margin-top: 40px;
   }
-
-  .logo-placeholder {
-    font-size: 1.8rem;
-  }
 }
-/* Hide dots on large and XL devices */
+
 @media (min-width: 992px) {
   .carousel-dots {
     display: none !important;
   }
 }
 
-/* Mobile carousel: horizontal scroll + dots for screens <=786px */
-@media (max-width: 786px) {
-  .testimonials-track {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 8px; /* space for dots */
-    margin-left: -8px; /* offset grid gutters */
-    margin-right: -8px;
-    flex-wrap: nowrap; /* prevent wrapping so children line up horizontally */
-    -ms-overflow-style: auto; /* IE/Edge show scrollbar */
-    scrollbar-color: rgba(0, 0, 0, 0.18) transparent; /* Firefox */
-  }
-
-  /* show a thin visible scrollbar on supported browsers */
-  .testimonials-track::-webkit-scrollbar {
-    height: 8px;
-  }
-  .testimonials-track::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .testimonials-track::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.18);
-    border-radius: 999px;
-  }
-
-  .testimonials-track .col-md-4 {
-    /* 100% so exactly one card is visible at a time */
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    scroll-snap-align: start;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .testimonial-card {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 12px;
-  }
-
-  .carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 50%;
-    background: #d0d0d0;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.15s ease;
-    box-sizing: border-box;
-    -webkit-appearance: none; /* remove native button styling */
-    appearance: none;
-    font-size: 0; /* avoid any inline text size affecting layout */
-  }
-
-  .carousel-dots .dot.active {
-    background: #da7a32;
-    transform: scale(1.05);
-  }
-
-  /* Remove any default focus outline that could appear as a box; provide subtle focus ring */
-  .carousel-dots .dot:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(218, 122, 50, 0.12);
-  }
-}
-/* Mobile carousel: horizontal scroll + dots for screens <=786px */
-@media (max-width: 786px) {
-  .testimonials-track {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 8px;
-    margin-left: -8px;
-    margin-right: -8px;
-    flex-wrap: nowrap;
-    -ms-overflow-style: auto;
-    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
-  }
+@media (min-width: 787px) {
   .logos-container {
-    scrollbar-width: none; /* Firefox */
-  }
-
-  .logos-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-  }
-  .testimonials-track::-webkit-scrollbar {
-    height: 8px;
-  }
-  .testimonials-track {
-    scrollbar-width: none !important; /* Firefox */
-  }
-  .testimonials-track::-webkit-scrollbar {
-    display: none !important; /* Chrome, Safari */
-  }
-  .testimonials-track::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .testimonials-track::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.18);
-    border-radius: 999px;
-  }
-
-  .testimonials-track .col-md-4 {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    scroll-snap-align: start;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .testimonial-card {
-    min-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .carousel-dots {
-    display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 12px;
-  }
-
-  .carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-radius: 50%;
-    background: #d0d0d0;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.15s ease;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    appearance: none;
-    font-size: 0;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    user-select: none;
-  }
-
-  .carousel-dots .dot:focus {
-    outline: none;
-    box-shadow: none;
-  }
-
-  .carousel-dots .dot:active {
-    outline: none;
-  }
-
-  .carousel-dots .dot.active {
-    background: #da7a32;
-    transform: scale(1.05);
-  }
-
-  /* Logos horizontal scroll - SAME SIZE AS DESKTOP */
-  .logos-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding-bottom: 8px;
-    -ms-overflow-style: auto;
-    scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+    gap: 40px;
+    margin: 50px auto 0;
+    overflow: visible;
   }
-
-  .logos-container::-webkit-scrollbar {
-    height: 8px;
-  }
-  .logos-container::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .logos-container::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.18);
-    border-radius: 999px;
-  }
-
   .logo-item {
     flex-shrink: 0;
-  }
-
-  /* Keep desktop logo sizes on mobile */
-  .logo-img--1 {
-    width: 39.613128662109375px;
-    height: 41.060611724853516px;
-  }
-  .logo-img--2 {
-    width: 60.96410369873047px;
-    height: 24.28403663635254px;
-  }
-  .logo-img--3 {
-    width: 47.1875px;
-    height: 47.1875px;
-  }
-  .logo-img--4 {
-    width: 126.92278289794922px;
-    height: 30.05436897277832px;
-  }
-  .logo-img--5 {
-    width: 59.6428337097168px;
-    height: 41.83900451660156px;
-  }
-  .logo-img--6 {
-    width: 45.278812408447266px;
-    height: 47.09770202636719px;
-    border-radius: 261.52px;
   }
 }
