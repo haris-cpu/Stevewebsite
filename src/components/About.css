@@ -94,7 +94,7 @@
 }
 
 .ceo-highlight {
-  color: #ff6b35;
+  color: #da7a32;
   ont-size: 32px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -116,11 +116,11 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 24px;
   color: #ffffff;
   width: 100%;
   opacity: 1;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 20px;
   height: auto;
 }

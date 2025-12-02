@@ -65,7 +65,7 @@ function CEO() {
                 />
               </div>
 
-              <p className="ceo-description">
+              <p className="ceo-description" style={{ marginTop: '17px' }}>
                 Steven helps purpose-driven founders reignite clarity, purpose,
                 and strategic momentum.
               </p>
@@ -95,7 +95,7 @@ function CEO() {
                     WHY:
                   </span>
                 </h2>
-                <p className="ceo-why-text">
+                <p className="ceo-why-text" style={{ marginTop: '20px' }}>
                   Steven believes that businesses can be used as a force for
                   good to help more people live inspiring lives. He's made it
                   his mission to empower people to do what inspires them.
