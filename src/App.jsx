@@ -10,12 +10,16 @@ import CEO from './components/About';
 import Main from './components/Main';
 import Strategy from './components/Strategy';
 import ScrollTransition from './components/Pagetransition';
+import Herosection from './components/Herosection';
 
 function App() {
   return (
     <>
       <ScrollTransition>
         <Navbar />
+      </ScrollTransition>
+      <ScrollTransition>
+        <Herosection />
       </ScrollTransition>
       <ScrollTransition>
         <Card />
